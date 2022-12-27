@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { NextPage } from 'next';
 import Card from '../components/Card';
+import Footer from '../components/Footer';
 
 
 const Home : NextPage =()=>{
@@ -13,9 +14,16 @@ const Home : NextPage =()=>{
         <meta charSet="UTF-8" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <div className='text-black font-bold'>
-        <Card/>
+      <div className='flex flex-col justify-center items-center h-screen w-screen bg-darkestGrey'>
+        <div className='flex flex-col justify-center items-center h-3/4 w-full'>
+          <Card/>        
+        </div>
+        <div className='flex flex-col justify-center items-center h-1/4 w-full'>
+          <Footer/>
+        </div>
       </div>
+
+      
 
     </>
   );

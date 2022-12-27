@@ -6,9 +6,20 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'sm': '576px',
-      'md': '960px',
+      'sm': '375px',
+      'md': '900px',
       'lg': '1440px',
+    },
+    colors: {
+      'darkestGrey': '#1F2632',
+      'darkGrey': '#313A48',
+      'cyan': '#CDE2E8',
+      'neonGreen': '#51FFA8'
+    },
+    extend: {
+      fontFamily: {
+        Manrope: ['Manrope', "sans-serif"],
+       },
     },
   },
   plugins: [],
